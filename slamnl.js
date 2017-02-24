@@ -6,7 +6,7 @@ client.login(creds.token);
 
 client.on("ready", () => {
 	client.channels.get(creds.channelid).join().then(connection => {
-		let stream = request({uri:'http://stream.radiocorp.nl/web11_mp3', headers:{'User-Agent':`SLAM!`}});
+		let stream = request({uri:'http://listen.181fm.com/181-vibe_128k.mp3', headers:{'User-Agent':`SLAM!`}});
 		connection.playStream(stream, {passes: 2})
 	})
 })

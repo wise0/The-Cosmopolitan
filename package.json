@@ -1,0 +1,15 @@
+{
+  "name": "slam",
+  "version": "1.0.0",
+  "description": "24/7 Stream from SLAM! NL's Hardstyle stream.",
+  "main": "slamnl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.79.0",
+    "request-promise-any": "^1.0.3"
+  }
+}

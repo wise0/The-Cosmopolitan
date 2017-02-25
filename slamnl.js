@@ -7,6 +7,7 @@ client.login(creds.token);
 client.user.setGame("EDM/Tropical/House");
 
 client.on("ready", () => {
+	client.user.setGame("EDM/Tropical/House");
 	client.channels.get(creds.channelid).join().then(connection => {
 		let stream = request({uri:'http://listen.181fm.com/181-vibe_128k.mp3', headers:{'User-Agent':`SLAM!`}});
 		connection.playStream(stream, {passes: 2})

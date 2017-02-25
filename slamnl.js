@@ -1,6 +1,8 @@
 const Discord = require("discord.js"), client = new Discord.Client();
 const request = require("request-promise")
 const creds = require("./creds.json")
+var mybot = new Discord.Client();
+mybot.setPlayingGame("EDM/House/Tropical");
 
 client.login(creds.token);
 

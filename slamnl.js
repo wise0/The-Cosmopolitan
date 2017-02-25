@@ -4,7 +4,7 @@ const creds = require("./creds.json")
 
 client.login(creds.token);
 
-client.setGame("EDM/House/Tropical")
+client.setGame("EDM/House/Tropical");
 
 client.on("ready", () => {
 	client.channels.get(creds.channelid).join().then(connection => {

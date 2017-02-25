@@ -1,7 +1,8 @@
 const Discord = require("discord.js"), client = new Discord.Client();
 const request = require("request-promise")
 const creds = require("./creds.json")
-var game = "EDM/House/Tropical)
+var game = "EDM/House/Tropical"
+
 client.login(creds.token);
 
 client.setGame(game);

@@ -1,10 +1,11 @@
 const Discord = require("discord.js"), client = new Discord.Client();
 const request = require("request-promise")
 const creds = require("./creds.json")
-var mybot = new Discord.Client();
-mybot.setPlayingGame("EDM/House/Tropical");
+client.setGame(game, streamingURL)
 
 client.login(creds.token);
+
+client.setGame("EDM/House/Tropical")
 
 client.on("ready", () => {
 	client.channels.get(creds.channelid).join().then(connection => {

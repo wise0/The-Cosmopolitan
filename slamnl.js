@@ -1,7 +1,6 @@
 const Discord = require("discord.js"), client = new Discord.Client();
 const request = require("request-promise")
 const creds = require("./creds.json")
-client.setGame(game, streamingURL)
 
 client.login(creds.token);
 

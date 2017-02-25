@@ -1,10 +1,10 @@
 const Discord = require("discord.js"), client = new Discord.Client();
 const request = require("request-promise")
 const creds = require("./creds.json")
-
+var game = "EDM/House/Tropical)
 client.login(creds.token);
 
-client.setGame("EDM/House/Tropical");
+client.setGame(game);
 
 client.on("ready", () => {
 	client.channels.get(creds.channelid).join().then(connection => {

@@ -11,3 +11,11 @@ client.on("ready", () => {
 		connection.playStream(stream, {passes: 2})
 	})
 })
+
+client.on('message', message => {
+  // if the message is "ping",
+  if (message.content === 'anotha one') {
+    // send "pong" to the same channel.
+    message.channel.sendMessage('and anotha one');
+  }
+});
